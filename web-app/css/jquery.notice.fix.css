@@ -1,0 +1,31 @@
+.notice-item {
+	min-width: 250px;
+	float: right;
+	clear: both;
+	height: auto;
+	min-height: 20px;
+	border: 1px solid #ccc;
+	background: white;
+	color: black;
+	box-shadow: 1px 1px 10px #ccc;
+	-moz-box-shadow: 1px 1px 10px #ccc;
+	-webkit-box-shadow: 1px 1px 10px #ccc;
+	padding: 5px 20px;
+}
+
+.notice-wrap {
+	width: auto;
+}
+
+.notice-success {
+	background-color: #59BA64;
+	color: white;
+	
+}
+
+.notice-error {
+	background-color: #C31616;
+	color: white;
+}
+
+.

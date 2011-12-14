@@ -1,6 +1,6 @@
 class JqueryNoticeGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "0.2"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
     // the other plugins this plugin depends on
@@ -9,19 +9,16 @@ class JqueryNoticeGrailsPlugin {
     def pluginExcludes = [
             "grails-app/views/error.gsp",
 			"grails-app/views/layouts/",
-			"grails-app/views/test/",
-			"grails-app/views/test",
-			"grails-app/controllers/test/",
-			"grails-app/controllers/test"
+			"grails-app/views/foo/**",
+			"grails-app/controllers/**",
+			"grails-app/domain/**",
     ]
 
     // TODO Fill in these fields
     def author = "Alessandro Tegner"
     def authorEmail = "alessandro.tegner@gmail.com"
     def title = "Plugin summary/headline"
-    def description = '''\\
-Brief description of the plugin.
-'''
+    def description = ''''''
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/jquery-notice"

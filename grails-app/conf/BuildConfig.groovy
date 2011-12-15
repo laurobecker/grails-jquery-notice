@@ -30,6 +30,7 @@ grails.project.dependency.resolution = {
     }
 	
 	plugins {
+		compile ':release:1.0.0'
 		runtime ':jquery:1.7'
 		runtime ':resources:1.1.3'
 	}

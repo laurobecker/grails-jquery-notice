@@ -3,6 +3,7 @@
 </head>
 <body>
 	<r:require module="jquery-notice-all"/>
+	
 	<n:notice text="Simple Notice" />
 	<n:error text="Simple Error" />
 	<n:success>
@@ -11,8 +12,8 @@
 	</n:success>
 	<n:success text="Success with stay" stay="true" />
 	
-	<n:flashMessageNotice/>
-	<n:flashErrorNotice/>
-	<n:flashSuccessNotice/>
-	<n:renderErrorsNotice bean="${bean}"/>
+	<n:flashMessage/>
+	<n:flashError/>
+	<n:flashSuccess/>
+	<n:renderErrors bean="${bean}"/>
 </body>

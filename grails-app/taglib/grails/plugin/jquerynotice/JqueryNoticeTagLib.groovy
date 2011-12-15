@@ -51,7 +51,7 @@ class JqueryNoticeTagLib {
 	/**
 	 * 
 	 */
-	def flashMessageNotice = { attrs ->
+	def flashMessage = { attrs ->
 		if (flash.message || flash.defaultMessage) {
 			if (!flash.defaultMessage) {
 				flash.defaultMessage = flash.message;	
@@ -66,7 +66,7 @@ class JqueryNoticeTagLib {
 	/**
 	 * 
 	 */
-	def flashErrorNotice = { attrs ->
+	def flashError = { attrs ->
 		if (flash.error || flash.defaultError) {
 			if (!flash.defaultError) {
 				flash.defaultError = flash.error;
@@ -81,7 +81,7 @@ class JqueryNoticeTagLib {
 	/**
 	 * 
 	 */
-	def flashSuccessNotice = { attrs ->
+	def flashSuccess = { attrs ->
 		if (flash.success || flash.defaultSuccess) {
 			if (!flash.defaultSuccess) {
 				flash.defaultSuccess = flash.success;
@@ -96,7 +96,7 @@ class JqueryNoticeTagLib {
 	/**
 	 * 
 	 */
-	def renderErrorsNotice = { attrs ->
+	def renderErrors = { attrs ->
 		def bean = attrs.bean;
 		attrs.remove(bean);
 		out << g.hasErrors(bean: bean) {

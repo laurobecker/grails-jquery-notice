@@ -60,6 +60,9 @@ class JqueryNoticeTagLib {
 			out << n.notice(attrs) {
 				out << g.message(code: flash.message, args: flash.args, default: flash.defaultMessage);	
 			}
+			
+			flash.message = null
+			flash.defaultMessage = null
 		}	
 	}
 	
@@ -75,6 +78,9 @@ class JqueryNoticeTagLib {
 			out << n.error(attrs) {
 				out << g.message(code: flash.error, args: flash.args, default: flash.defaultError);
 			}
+			
+			flash.error = null
+			flash.defaultError = null
 		}
 	}
 	
@@ -90,6 +96,9 @@ class JqueryNoticeTagLib {
 			out << n.success(attrs) {
 				out << g.message(code: flash.success, args: flash.args, default: flash.defaultSuccess);
 			}
+			
+			flash.message = null
+			flash.defaultMessage = null
 		}
 	}
 	
